@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 외부파일 사용하기</title>
+</head>
+<!-- 홈페이지가 로드 시 함수 호출 (주로 팝업창 만들 때 자주 씀.) -->
+<body onload="function01();">
+
+    <!-- 문서 내에서 클릭하여 외부파일 함수 호출 -->
+    <h1 onclick="function03('argument');">외부 파일 함수 호출</h1>
+    <ul class="nav">
+        <li><a href="#" onclick="urlFn('구글');">구글</a></li>
+        <li><a href="#" onclick="urlFn('마켓컬리');">마켓컬리</a></li>
+        <li><a href="#" onclick="urlFn('스타벅스');">스타벅스</a></li>
+    </ul>
+
+    <!-- 웹문서 하단에 외부파일 호출 실행 -->
+    <!-- 이유 : 모든 웹문서 태그(마크업)와 스타일을 실행 후 자바스크립트 실행하여 사용함 -->
+    <!-- 온로드 디퍼 -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

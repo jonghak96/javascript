@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 쿼크모드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초01 기초문법 실행문</title>
+
+    <script>
+        // 권장사항 (외부)
+        alert("헤드영역에서 자바스크립트 경고창 띄우기.");
+    </script>
+
+</head>
+<body>
+
+    <script>
+        // 출력문 : 경고창
+        alert("자바스크립트 경고창 -이종학-");
+        // 웹문서에 포함 출력
+        document.write("자바스크립트 문서창 -이종학-");
+        // 개발자 모드 콘솔창에 출력
+        console.log("자바스크립트 콘솔창 -이종학-");
+
+        function hamsoo() {
+            alert("함수 호출 실행 경고창");
+            console.log("함수 호출 실행 콘솔창");
+            document.write("함수 호출 실행 웹문서에 출력"); // 기존 내용 덮어씀.
+        }
+    </script>
+
+    <!-- tabindex 로 탭 순서 설정. -->
+    <h1 onclick="alert('태그요소에서의 클릭이벤트.');" tabindex="0">자바스크립트</h1>
+    <h2 onclick="hamsoo();">스크립트에서 함수 호출 실행하기</h2>
+
+    <input type="text" onkeydown="hamsoo();" style="width:500px;height:50px;border:solid 1px #ccc;">
+
+
+
+</body>
+</html>

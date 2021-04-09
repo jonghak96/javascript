@@ -94,20 +94,38 @@ function autoNum() { // 이름이 있는 함수. (선언적 함수)
 
 // 자동 설정 타이머 호출 실행
 // 1초 간격으로 1씩 증가하는 함수 호출 실행
-// 0.1초 : 100 밀리세컨드
-// 1초 : 1000 밀리세컨드
-// 10초 : 10000 밀리세컨드
-setInterval(autoNum, 100);
+// 0.01초   : 10 밀리세컨드
+// 0.1초    : 100 밀리세컨드
+// 1초      : 1000 밀리세컨드
+// 10초     : 10000 밀리세컨드
+setInterval(autoNum, 1000);
 
 
         ////////////////////////
         ///   슬라이드 이미지    ///
         ////////////////////////
 
-var slideWrap = document.querySelector(".slide-wrap");
+var slideWrap = document.querySelectorAll(".slide-wrap"); // querySelectorAll : 배열
+var slideWrap2 = document.querySelector(".slide-wrap"); // 클래스 이름이 1개인 경우.
+
 var prevBtn = document.querySelector("#prevBtn");
 var nextBtn = document.querySelector("#nextBtn");
 
+var aTag = document.querySelectorAll(".nav a"); // 중복 피할 수 있게 작성할 것. (".nav > li > a"), ("#section2 .slide-wrap")
+
 // 클래스는 2개 이상, 중복이 가능하기 때문에 하나만 있더라도 [0]을 써야함.
+console.log("slideWrap : ", slideWrap);
+console.log("slideWrap[0] : ", slideWrap[0]);
+console.log("slideWrap2 : ", slideWrap2);
+console.log("slideWrap2[0] : ", slideWrap2[0]);
+
+console.log(aTag);
+for (i in aTag) {
+    console.log(i);
+    console.log(aTag[i]);
+}
+
 cnt = 2;
-slideWrap[0].style = "left:" + (-1920*cnt); + "px"
+// slideWrap[0].style = "left:calc(-1920px*4)";
+slideWrap[0].style = "left:" + (-1920*cnt) + "px";
+ 

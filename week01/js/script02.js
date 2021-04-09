@@ -71,5 +71,5 @@ var slideWrap = document.querySelector(".slide-wrap");
 var prevBtn = document.querySelector("#prevBtn");
 var nextBtn = document.querySelector("#nextBtn");
 
-cnt = 3;
+cnt = 4;
 slideWrap[0].style = "left:" + (-1920*cnt); + "px"

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 외부파일 사용하기</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<!-- 홈페이지가 로드 시 함수 호출 (주로 팝업창 만들 때 자주 씀.) -->
+<body onload="function01();">
+
+    <!-- 문서 내에서 클릭하여 외부파일 함수 호출 -->
+    <h1 onclick="function03('argument');">외부 파일 함수 호출</h1>
+    <ul class="nav">
+        <!-- 함수의 소괄호 안에 변수값이나 텍스트, 숫자들을 전달할 값을 '전달인자[argument]'라고 한다. -->
+        <!-- 그리고 받아주는 함수에서는 소괄호 안에 변수와 같이 영문으로 사용하는 변수를 '매개변수[parameter]'라고 한다. -->
+        <!-- 인라인 버튼 등록 (인라인 버튼 이벤트 핸들러) -->
+        <li><a href="#" onclick="urlFn('https://google.com');">구글</a></li>
+        <li><a href="#" onclick="urlFn('https://www.kurly.com');">마켓컬리</a></li>
+        <li><a href="#" onclick="urlFn('https://www.starbucks.co.kr');">스타벅스</a></li>
+    </ul>
+
+    <hr>
+    
+    <!-- button*5#btn0$>{버튼0$} -->
+    <button id="btn01">버튼01</button>
+    <button id="btn02">버튼02</button>
+    <button id="btn03">버튼03</button>
+
+    <hr>
+
+    <button id="btn04">버튼04</button>
+    <button id="btn05">버튼05</button>
+
+    <hr>
+    
+    <h2 id="output" style="text-align:center;">000</h2>
+
+    <hr>
+
+    <div id="slide-container">
+        <ul class="slide-wrap">
+            <li class="slide slide01"><img src="./img/photography-img35.jpg" alt="img35"></li>
+            <li class="slide slide02"><img src="./img/photography-img36.jpg" alt="img36"></li>
+            <li class="slide slide03"><img src="./img/photography-img37.jpg" alt="img37"></li>
+            <li class="slide slide04"><img src="./img/photography-img38.jpg" alt="img38"></li>
+            <li class="slide slide05"><img src="./img/photography-img39.jpg" alt="img39"></li>
+        </ul>
+    </div>
+
+    <button id="prevBtn">이전 슬라이드</button>
+    <button id="nextBtn">다음 슬라이드</button>
+
+
+    <!-- 웹문서 하단에 외부파일 호출 실행 -->
+    <!-- 이유 : 모든 웹문서 태그(마크업)와 스타일을 실행 후 자바스크립트 실행하여 사용함 -->
+    <!-- 온로드 디퍼 -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

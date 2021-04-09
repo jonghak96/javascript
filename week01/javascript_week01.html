@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기초문법 실행문</title>
 
+    <link rel="stylesheet" href="./css/style.css">
+
     <script>
         alert("head 영역에서 경고창 띄우기");
     </script>
@@ -29,13 +31,38 @@
 
     <h3 onclick="function03('argument01')">외부파일 함수호출</h3>
     <ul class="nav">
-        <li><a href="#" onclick="urlFn('구글')">구글</a></li>
-        <li><a href="#" onclick="urlFn('마켓컬리')">마켓컬리</a></li>
-        <li><a href="#" onclick="urlFn('스타벅스')">스타벅스</a></li>
+        <li><a href="#" onclick="urlFn('https://google.com')">구글</a></li>
+        <li><a href="#" onclick="urlFn('https://www.kurly.com')">마켓컬리</a></li>
+        <li><a href="#" onclick="urlFn('https://www.starbucks.co.kr')">스타벅스</a></li>
     </ul>
 
     <input type="text" onkeydown="hamsoo();" style="width:500px;height:50px;border:solid 1px #ccc;">
+
+    <button id="btn01">버튼01</button>
+    <button id="btn02">버튼02</button>
+    <button id="btn03">버튼03</button>
+    <hr>
+    <button id="btn04">버튼04</button>
+    <button id="btn05">버튼05</button>
+    <hr>
+
+    <h2 id="output" style="text-align:center;">0</h2>
     
+    <hr>
+
+    <div class="" id="slide-container">
+        <ul class="slide-wrap">
+            <li class="slide slide01"><img src="./img/photography-img35.jpg" alt="img35"></li>
+            <li class="slide slide02"><img src="./img/photography-img36.jpg" alt="img36"></li>
+            <li class="slide slide03"><img src="./img/photography-img37.jpg" alt="img37"></li>
+            <li class="slide slide04"><img src="./img/photography-img38.jpg" alt="img38"></li>
+            <li class="slide slide05"><img src="./img/photography-img39.jpg" alt="img39"></li>
+        </ul>
+    </div>
+
+    <button id="prevBtn">이전 슬라이드</button>
+    <button id="nextBtn">다음 슬라이드</button>
+
     <script src="./js/script02.js"></script>
 </body>
 </html>

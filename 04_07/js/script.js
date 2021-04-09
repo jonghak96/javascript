@@ -36,9 +36,9 @@ function urlFn(parameter) { // 매개변수 <-> 전달인자(argument)
 }
 
 
-        ////////////////////////////
+        /////////////////////////
         ///   버튼 등록 후 사용   ///
-        ////////////////////////////
+        /////////////////////////
 
 // 1. 태그 아이디 클래스 속성선택자(type이 버튼이냐/텍스트냐..), 이러한 명칭(이름) 필요. 선택하기 위해
 var btn01 = document.querySelector("#btn01"); // 아이디가 btn01인 선택자
@@ -100,9 +100,9 @@ function autoNum() { // 이름이 있는 함수. (선언적 함수)
 setInterval(autoNum, 100);
 
 
-        ///////////////////////////
+        ////////////////////////
         ///   슬라이드 이미지    ///
-        ///////////////////////////
+        ////////////////////////
 
 var slideWrap = document.querySelector(".slide-wrap");
 var prevBtn = document.querySelector("#prevBtn");

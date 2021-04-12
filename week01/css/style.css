@@ -6,7 +6,7 @@ body {font:normal 14px/1 'arial';color:#444;}
 ul,ol,li {list-style:none;}
 
 #slide-container {width:100%;}
-#slide-container .slide-wrap {position:relative;left:calc(-1920px*1);width:calc(1903px*5);transition:all 3s;}
+#slide-container .slide-wrap {position:relative;left:calc(-1920px*1);width:calc(1903px*5);transition:all 2s;}
 /* 스크롤바 없으면 1920px */
 #slide-container .slide-wrap .slide {width:1903px;float:left;}
 #slide-container .slide-wrap .slide img {width:100%;}

@@ -62,14 +62,3 @@ function autoNum() {
     console.log(5 === "5");
     console.log(5 !== "5");
 }
-
-        ////////////////////////
-        ///   슬라이드 이미지    ///
-        ////////////////////////
-
-var slideWrap = document.querySelector(".slide-wrap");
-var prevBtn = document.querySelector("#prevBtn");
-var nextBtn = document.querySelector("#nextBtn");
-
-cnt = 4;
-slideWrap[0].style = "left:" + (-1920*cnt); + "px"

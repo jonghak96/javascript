@@ -30,18 +30,63 @@
             console.log(this.winH);
             console.log(this.val);
             console.log(this.val[3]);
+
+            var $this = this;
+            var that = this;
+            let $btn = document.querySelector("#btn");
+
+            $btn.addEventListener("click", function() {
+                this.innerHTML = "클릭됨";
+                console.log("'this' :", this);
+                console.log("'that' :", that);
+            });
         },
         mainFn : function() {
 
         },
         section01 : function() {
-
+            var txt = 0;
+            var txt = "";
+            let $btnFor = document.querySelector("#btnFor");
+            let $output = document.querySelector('#section01 .output');
+            $btnFor.addEventListener("click", function() {
+                for(let i=0; i<10; i++) {
+                    txt += `<li>${i}</li>`;
+                }
+                $output.innerHTML = txt;
+            });
         },
         section02 : function() {
-
+            let $minusBtn = document.querySelector("#section02 .minusBtn");
+            let $outputWrap = document.querySelector("#section02 .outputWrap");
+            let txt = "";
+            $minusBtn.addEventListener("click", function() {
+                for(let i=10; i>0; i--) {
+                    txt += `<li>${i}</li>`;
+                }
+                $outputWrap.innerHTML = txt;
+            });
         },
         section03 : function() {
-
+            let $googoodanBtn = document.querySelector("#section03 .googoodanBtn");
+            let $googoodan = document.querySelector("#section03 .googoodan");
+            let txt = "";
+            let result = "";
+            $googoodanBtn.addEventListener("click", function() {
+                for (let i=2; i<10; i++) {
+                    txt += "<tr>";
+                    for (let j=1; j<10; j++) {
+                        if(i*j<10) {
+                            result = "0" + String(i*j);
+                        } else {
+                            result = i*j;
+                        }
+                        txt += `<td>${i} x ${j} = ${result}</td>`;
+                    }
+                    txt += "</tr>";
+                }
+                $googoodan.innerHTML = txt;
+            });
         },
         section04 : function() {
 

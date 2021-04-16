@@ -5,17 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <header id="header">
-    
+        <button id="btn">버튼</button>
     </header>
-
+    
     <main id="main">
-        <section id="section01"></section>
-        <section id="section02"></section>
-        <section id="section03"></section>
+        <section id="section01">
+            <button id="btnFor">FOR 반복문</button>
+            <ul class="output" style="text-align:center;color:#c00;">
+                <li>000</li>
+            </ul>
+        </section>
+        <section id="section02">
+            <div id="buttonWrap" style="font-size:20px;text-align:center;">
+                <button class="minusBtn" style="padding:10px 20px;">마이너스 버튼</button>
+            </div>
+            <ul class="outputWrap" style="font-size:20px;text-align:center;"></ul>
+        </section>
+        <section id="section03">
+            <div id="buttonWrap" style="text-align:center;">
+                <button class="googoodanBtn" style="padding:10px 20;">구구단 버튼</button>
+            </div>
+            <style>
+                #section03 table {margin:0 auto;width:1000px;border-collapse:collapse;}
+                #section03 td {border:1px solid #ccc;padding:5px 20px;text-align:center;width:998px;height:20px;}
+            </style>
+            <table class="googoodan"></table>
+        </section>
         <section id="section04"></section>
         <section id="section05"></section>
         <section id="section06"></section>

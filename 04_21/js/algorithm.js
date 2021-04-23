@@ -95,8 +95,8 @@
 
             // 줄이 증가하면서 칸도 증가하는 삼각형 알고리즘.
             // section1 > table[0] > tr(행) > td(열) 채우기
-            var cnt = 0;
-            var section1_table = document.querySelector("#section1 table");
+            let cnt = 0;
+            let section1_table = document.querySelector("#section1 table");
             for (let i=0; i<=4; i++) {
                 for (let j=0; j<=i; j++) {
                     section1_table.children[i].children[j].textContent = ++cnt;
@@ -108,8 +108,8 @@
 
             // 줄이 증가하면서 칸도 증가하는 삼각형 알고리즘.
             // section1 > table[0] > tr(행) > td(열) 채우기
-            var cnt = 0;
-            var section2_table = document.querySelector("#section2 table");
+            let cnt = 0;
+            let section2_table = document.querySelector("#section2 table");
             for (let i=0; i<=4; i++) {
                 for (let j=4-i; j<=4; j++) {
                     section2_table.children[i].children[j].textContent = ++cnt;
@@ -121,8 +121,8 @@
 
             // 줄이 증가하면서 칸은 감소하는 삼각형 알고리즘.
             // section1 > table[0] > tr(행) > td(열) 채우기
-            var cnt = 0;
-            var section3_table = document.querySelector("#section3 table");
+            let cnt = 0;
+            let section3_table = document.querySelector("#section3 table");
             for (let i=0; i<=4; i++) {
                 for (let j=0; j<=4-i; j++) {
                     section3_table.children[i].children[j].textContent = ++cnt;
@@ -134,8 +134,8 @@
 
             // 줄이 증가하면서 칸은 감소하는 삼각형 알고리즘.
             // section1 > table[0] > tr(행) > td(열) 채우기
-            var cnt = 0;
-            var section4_table = document.querySelector("#section4 table");
+            let cnt = 0;
+            let section4_table = document.querySelector("#section4 table");
             for (let i=0; i<=4; i++) {
                 for (let j=i; j<=4; j++) {
                     section4_table.children[i].children[j].textContent = ++cnt;
@@ -145,55 +145,33 @@
         },
         algo05 : function() {
 
-            // 줄이 증가하면서 칸은 감소하는 삼각형 알고리즘.
-            // section1 > table[0] > tr(행) > td(열) 채우기
-            var cnt = 0;
-            var section5_table = document.querySelector("#section5 table");
-
-            section5_table.children[i].children[j].textContent = ++cnt;
-
+            let cnt = 0;
+            let section5_table = document.querySelector("#section5 table");
             for (let i=0; i<=4; i++) {
-
+                if (i <= 2) {
+                    for (let j=2-i; j<=4-j+(2*i); j++) {
+                        section5_table.children[i].children[j].textContent = ++cnt;
+                    }
+                } else {
+                    for (let k=i-2; k<=6-i; k++) {
+                        section5_table.children[i].children[k].textContent = ++cnt;
+                    }
+                }
             }
-
-            // 1  1
-            // 2  3
-            // 3  5
-            // 4  7
-            // 5  5
-            // 6  3
-            // 7  1
-
-
-// 2 5 8 7 6
-// 2 5 8 11 10 9 8
-
-
-            // 0    2
-            // 1    1
-            // 1    2
-            // 1    3
-            // 2    0
-            // 2    1
-            // 2    2
-            // 2    3
-            // 2    4
-            // 3    1
-            // 3    2
-            // 3    3
-            // 4    2
-
-            
         },
         algo06 : function() {
-
-            // 줄이 증가하면서 칸은 감소하는 삼각형 알고리즘.
-            // section1 > table[0] > tr(행) > td(열) 채우기
-            var cnt = 0;
-            var section6_table = document.querySelector("#section6 table");
+            
+            let cnt = 0;
+            let section6_table = document.querySelector("#section6 table");
             for (let i=0; i<=4; i++) {
-                for (let j=i; j<=4; j++) {
-                    section6_table.children[i].children[j].textContent = ++cnt;
+                if (i <= 2) {
+                    for (let j=i; j<=4-i; j++) {
+                        section6_table.children[i].children[j].textContent = ++cnt;
+                    }
+                } else {
+                    for (let k=4-i; k<=i; k++) {
+                        section6_table.children[i].children[k].textContent = ++cnt;
+                    }
                 }
             }
             

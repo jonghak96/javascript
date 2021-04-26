@@ -53,10 +53,16 @@
             // 현재 실행중인 슬라이드의 아이디가 imgFirst면,
             // 초기화해서 처음으로 돌아감.
             slideWrap.addEventListener("transitionend",function() {
-                if (slideAll[cnt].id == "imgFirst") cnt = 1;
-                if (slideAll[cnt].id == "imgLast") cnt = 5;
-                slideWrap.style.transition = "none"; // 트랜지션 제거 : 애니메이션 중지.
-                slideWrap.style.transform = `translateX(-${size*cnt}px)`;
+                if (slideAll[cnt].id == "imgFirst") {
+                    cnt = 1;
+                    slideWrap.style.transition = "none"; // 트랜지션 제거 : 애니메이션 중지.
+                    slideWrap.style.transform = `translateX(-${size*cnt}px)`;
+                }
+                if (slideAll[cnt].id == "imgLast") {
+                    cnt = 5;
+                    slideWrap.style.transition = "none"; // 트랜지션 제거 : 애니메이션 중지.
+                    slideWrap.style.transform = `translateX(-${size*cnt}px)`;
+                }
             });
 
         } // slideFn() //

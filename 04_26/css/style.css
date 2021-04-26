@@ -1,0 +1,21 @@
+@charset "UTF8";
+* {margin:0;padding:0;vertical-align:middle;}
+html,body {width:100%;height:100%;}
+/* 스크롤바 만들기 (1920 > 1903) */
+html {overflow-y:scroll;}
+body {font:normal 14px/1 'arial';color:#444;}
+ul,ol,li {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:14px;font-weight:normal;}
+
+#wrap {width:100%;}
+#wrap div.slide-container {width:100%;}
+#wrap div.slide-container div.slide-view {width:100%;overflow:hidden;}
+#wrap div.slide-container div.slide-view ul.slide-wrap {width:calc(100%*7);}
+#wrap div.slide-container div.slide-view ul.slide-wrap::after {content:"";display:block;clear:both;}
+#wrap div.slide-container div.slide-view ul.slide-wrap li.slide {width:1903px;float:left;}
+#wrap div.slide-container div.slide-view ul.slide-wrap li.slide div.slide-gap {margin:0;}
+#wrap div.slide-container div.slide-view ul.slide-wrap li.slide div.slide-gap img {width:100%;}
+
+#wrap .button-wrap {padding-top: 50px;text-align:center;}
+#wrap .button-wrap button {display:inline-block;width:200px;height:50px;background:#000;color:#f0f0f0;transition:all .1s;font-size:17px;font-weight:600;border:1px solid #000;outline:0;cursor:pointer;margin:0 10px;}
+#wrap .button-wrap button:hover {background:#9cc;}

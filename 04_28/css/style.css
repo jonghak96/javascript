@@ -7,7 +7,6 @@ ul,ol,li {list-style:none;}
 h1,h2,h3,h4,h5,h6 {font-size:14px;font-weight:normal;}
 
 
-
 /* 입력 폼 */
 #wrap {width:100%;}
 #wrap #sectionForm {width:100%;}
@@ -23,7 +22,6 @@ h1,h2,h3,h4,h5,h6 {font-size:14px;font-weight:normal;}
 #wrap #sectionForm form .form-wrap .gap .content ul li div input::placeholder {color:#aaa;font-size:13px;}
 #wrap #sectionForm form .form-wrap .gap .content ul li div button {width:200px;height:40px;background:#000;color:#fff;cursor:pointer;margin:30px 5px 0 5px;}
 #wrap #sectionForm form .form-wrap .gap .content ul li div button:hover {background:#c00;transition:all .2s;}
-
 
 
 /* 출력창 Response */

@@ -1,0 +1,37 @@
+@charset "UTF8";
+* {margin:0;padding:0;vertical-align:middle;}
+html,body {width:100%;height:100%;}
+html {overflow-y:scroll;} /* 스크롤바 만들기 (1920 > 1903) */
+body {font:normal 14px/1 'arial';color:#444;}
+ul,ol,li {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:14px;font-weight:normal;}
+
+
+/* 입력 폼 */
+#wrap {width:100%;}
+#wrap #sectionForm {width:100%;}
+#wrap #sectionForm form {width:100%;}
+#wrap #sectionForm form .form-wrap {width:1000px;margin:50px auto;background:#eee;}
+#wrap #sectionForm form .form-wrap .gap {padding:50px;}
+#wrap #sectionForm form .form-wrap .gap .content {width:100%;}
+#wrap #sectionForm form .form-wrap .gap .content ul {width:100%;}
+#wrap #sectionForm form .form-wrap .gap .content ul li {width:100%;}
+#wrap #sectionForm form .form-wrap .gap .content ul li div {padding:5px 0;text-align:center;}
+#wrap #sectionForm form .form-wrap .gap .content ul li div h2 {font-size:30px;text-align:center;padding-bottom:30px;}
+#wrap #sectionForm form .form-wrap .gap .content ul li div input {width:100%;height:50px;border:1px solid #ddd;background:#fff;text-indent:15px;color:#444;font-size: 15px;text-align:left;}
+#wrap #sectionForm form .form-wrap .gap .content ul li div input::placeholder {color:#aaa;font-size:13px;}
+#wrap #sectionForm form .form-wrap .gap .content ul li div button {width:200px;height:40px;background:#000;color:#fff;cursor:pointer;margin:30px 5px 0 5px;}
+#wrap #sectionForm form .form-wrap .gap .content ul li div button:hover {background:#c00;transition:all .2s;}
+
+
+/* 출력창 Response */
+table {margin: 150px auto 50px auto;}
+table th,td {border:1px solid #ccc;padding-left:10px;}
+table tr th {height:50px;background:#444;color:#fff;font-size:17px;}
+table tr td {height:50px;background:#777;color:#fff;font-size:15px;}
+
+table tr th:nth-child(1) {width:100px;text-align:center;}
+table tr th:nth-child(2) {width:150px;text-align:center;}
+table tr th:nth-child(3) {width:200px;text-align:left;}
+
+button.backBtn {display:block;width:150px;height:45px;background:#c00;color:#fff;margin:0 auto;}

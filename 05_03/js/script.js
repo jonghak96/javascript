@@ -31,15 +31,16 @@
 
             // 위아래 여백 (탑 포지션) = (창높이 - 퀵메뉴 박스높이) / 2
             var topPosition = (windowInnerHeight-quickMenuOffsetHeight)/2;
-            quickMenu.style.top = topPosition + "px";
+            quickMenu.style.transition = "top .6s";
             
             // 퀵메뉴 애니메이션 함수
             function quickMenuAnimationFn() {
                 // 스크롤 탑 값 + 퀵메뉴 박스 탑 값
                 // console.log("스크롤 탑 값 :", window.scrollY);
-                quickMenu.style.top = (-window.scrollY + topPosition) + "px";
-                quickMenu.style.transition = "top .3s";
+                quickMenu.style.top = (window.scrollY + topPosition) + "px";
             }
+
+            quickMenuAnimationFn();
 
             // 윈도우 스크롤 이벤트 리스너 등록
             window.addEventListener("scroll", function() {
